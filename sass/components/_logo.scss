@@ -1,0 +1,23 @@
+.logo {
+  font-family: $font-logo;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+
+  &__studio_dark {
+    color: #000000;
+  }
+
+  &__studio_light {
+    color: #ffffff;
+  }
+
+  &__web {
+    color: $accent-color;
+  }
+}
+
+.footer-logo {
+  margin-bottom: 20px;
+}

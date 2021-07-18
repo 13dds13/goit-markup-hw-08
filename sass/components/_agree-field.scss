@@ -1,0 +1,39 @@
+.agree-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 24px;
+  margin-bottom: 30px;
+}
+
+.label-agree {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $text-color;
+}
+
+.label-agree__wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 7px;
+  width: 16px;
+  height: 15px;
+  border: 2px solid $logo-color-dark;
+  border-radius: 2px;
+  fill: $color-on-dark-accent-bg;
+}
+
+.user-check:checked + .label-agree .label-agree__wrap {
+  border: none;
+  background-color: $accent-color;
+}
+
+.label-agree__link {
+  color: $accent-color;
+  text-decoration: underline;
+}
