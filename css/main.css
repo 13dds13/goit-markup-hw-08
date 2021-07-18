@@ -52,7 +52,7 @@ body {
 }
 
 .container {
-  max-width: 480px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -60,27 +60,8 @@ body {
 }
 
 .section {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
-@media screen and (min-width: 1200px) {
-  .section {
-    padding-top: 90px;
-    padding-bottom: 90px;
-  }
-}
-
-.section {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
-@media screen and (min-width: 1200px) {
-  .section {
-    padding-top: 90px;
-    padding-bottom: 90px;
-  }
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .logo {
