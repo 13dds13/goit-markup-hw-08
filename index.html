@@ -21,45 +21,50 @@
   </head>
   <body>
     <!-- mobile-menu -->
-    <button type="button" class="btn btn-mob-menu">
+    <button type="button" class="btn-mob-menu" data-menu-button>
       <svg class="btn-mob-menu" width="24" height="16">
-        <use data-modal-open href=""></use>
-        <use data-modal-close href=""></use>
+        <use href=""></use>
+        <use href=""></use>
       </svg>
     </button>
 
-    <div class="mob-menu-container is-hidden" data-modal>
+    <div class="mob-menu-container" data-menu>
       <nav class="nav-mob">
         <ul class="nav-list-mob">
-          <li class="nav-list-mob__item"><a class="nav-list-mob__link" href="">Студия</a></li>
-          <li class="nav-list-mob__item"><a class="nav-list-mob__link" href="">Портфолио</a></li>
+          <li class="nav-list-mob__item">
+            <a class="nav-list-mob__link nav-list-mob__link_current" href="./index.html">Студия</a>
+          </li>
+          <li class="nav-list-mob__item">
+            <a class="nav-list-mob__link" href="./portfolio.html">Портфолио</a>
+          </li>
           <li class="nav-list-mob__item"><a class="nav-list-mob__link" href="">Контакты</a></li>
         </ul>
       </nav>
+      <div class="contacts-mob-container">
+        <ul class="contacts-mob">
+          <li class="contacts-mob__item contacts-mob__item_tel">
+            <a class="contacts-mob__link contacts-mob__link_tel" href="">+38 096 111 11 11</a>
+          </li>
+          <li class="contacts-mob__item contacts-mob__item_mail">
+            <a class="contacts-mob__link contacts-mob__link_mail" href="">info@devstudio.com</a>
+          </li>
+        </ul>
 
-      <ul class="contacts-mob">
-        <li class="contacts-mob__item">
-          <a class="contacts-mob__link" href="">+38 096 111 11 11</a>
-        </li>
-        <li class="contacts-mob__item">
-          <a class="contacts-mob__link" href="">info@devstudio.com</a>
-        </li>
-      </ul>
-
-      <ul class="socials-mob">
-        <li class="socials-mob__item">
-          <a class="socials-mob__link" href="">Instagram</a
-          ><span class="socials-mob__border">|</span>
-        </li>
-        <li class="socials-mob__item">
-          <a class="socials-mob__link" href="">Twitter</a><span class="socials-mob__border">|</span>
-        </li>
-        <li class="socials-mob__item">
-          <a class="socials-mob__link" href="">Facebook</a
-          ><span class="socials-mob__border">|</span>
-        </li>
-        <li class="socials-mob__item"><a class="socials-mob__link" href="">LinkedIn</a></li>
-      </ul>
+        <ul class="socials-mob">
+          <li class="socials-mob__item">
+            <a class="socials-mob__link" href="">Instagram</a>
+          </li>
+          <li class="socials-mob__item">
+            <a class="socials-mob__link" href="">Twitter</a>
+          </li>
+          <li class="socials-mob__item">
+            <a class="socials-mob__link" href="">Facebook</a>
+          </li>
+          <li class="socials-mob__item">
+            <a class="socials-mob__link" href="">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
     </div>
 
     <!--Header-->
@@ -691,5 +696,6 @@
       </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

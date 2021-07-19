@@ -5,12 +5,20 @@
   line-height: 1.17;
   letter-spacing: 0.03em;
 
+  @media screen and (max-width: 767px) {
+    .logo {
+      display: block;
+      padding-top: 16px;
+      padding-bottom: 16px;
+    }
+  }
+
   &__studio_dark {
-    color: #000000;
+    color: $logo-color-dark;
   }
 
   &__studio_light {
-    color: #ffffff;
+    color: $color-on-dark-accent-bg;
   }
 
   &__web {
