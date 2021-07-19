@@ -2,8 +2,21 @@
   background-color: $bgc-dark-gray;
 
   &-container {
-    display: flex;
     padding-top: 60px;
     padding-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    &-container {
+      display: flex;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .tablet-footer {
+    display: flex;
+    align-items: top;
+    justify-content: center;
   }
 }

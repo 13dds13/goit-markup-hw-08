@@ -91,8 +91,6 @@ body {
 
 .logo {
   font-family: "Raleway", sans-serif;
-  padding-top: 16px;
-  padding-bottom: 16px;
   font-weight: 700;
   font-size: 24px;
   line-height: 1.17;
@@ -119,12 +117,13 @@ body {
 }
 
 .footer-logo {
+  display: block;
   margin-bottom: 20px;
 }
 
 .nav-list {
   display: flex;
-  margin-left: 93px;
+  margin-left: 88px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -182,8 +181,8 @@ body {
 .contacts-list {
   margin-left: auto;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.02em;
 }
 
@@ -251,6 +250,9 @@ body {
 
 @media screen and (min-width: 1200px) {
   .section-hero {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 200px;
     padding-bottom: 200px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg.jpg);
@@ -305,6 +307,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
   margin-left: auto;
   width: 40px;
   height: 40px;
@@ -331,6 +335,8 @@ body {
 .btn-subscribe {
   display: flex;
   align-items: center;
+  margin-left: auto;
+  margin-right: auto;
   padding: 10px 29px;
 }
 
@@ -841,19 +847,22 @@ body {
 }
 
 .footer-container {
-  display: flex;
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
-.section-address {
-  display: flex;
-  flex-flow: column;
-  min-width: 231px;
+@media screen and (min-width: 1200px) {
+  .footer-container {
+    display: flex;
+  }
 }
 
-.footer-contacts__item:not(:last-child) {
-  margin-bottom: 9px;
+@media screen and (min-width: 768px) {
+  .tablet-footer {
+    display: flex;
+    align-items: top;
+    justify-content: center;
+  }
 }
 
 .footer-contacts__address {
@@ -878,9 +887,44 @@ body {
   color: #2196f3;
 }
 
-.socials-section {
-  padding-top: 12px;
-  margin-left: 70px;
+@media screen and (max-width: 767px) {
+  .section-address {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  .footer-contacts {
+    text-align: center;
+  }
+  .footer-contacts__item:not(:last-child) {
+    margin-bottom: 8px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .section-address {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  .footer-contacts {
+    text-align: center;
+  }
+  .footer-contacts__item:nth-child(1) {
+    margin-bottom: 5px;
+  }
+  .footer-contacts__item:nth-child(2) {
+    margin-bottom: 8px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-address {
+    display: flex;
+    flex-flow: column;
+    min-width: 231px;
+  }
+  .footer-contacts__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
 }
 
 .socials-title {
@@ -893,16 +937,41 @@ body {
   color: #ffffff;
 }
 
-.subscribe-form {
-  width: 100%;
-  height: auto;
-  margin-left: 93px;
-  padding-top: 12px;
+@media screen and (max-width: 767px) {
+  .socials-section {
+    text-align: center;
+    margin-bottom: 60px;
+  }
 }
 
-.input-btn-container {
-  display: flex;
-  width: 570px;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .socials-section {
+    text-align: center;
+    margin-left: 165px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .socials-section {
+    padding-top: 12px;
+    margin-left: 70px;
+  }
+}
+
+.subscribe-form {
+  text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .input-btn-container {
+    display: flex;
+    width: 570px;
+  }
+  .subscribe-form {
+    margin-left: 93px;
+    padding-top: 12px;
+    text-align-last: left;
+  }
 }
 
 .subscribe-label {
@@ -917,10 +986,10 @@ body {
 }
 
 .subscribe-input {
-  margin-right: 12px;
-  padding-left: 16px;
   height: 50px;
-  width: 358px;
+  padding-left: 16px;
+  margin-bottom: 20px;
+  width: 100%;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   background-color: transparent;
@@ -936,6 +1005,19 @@ body {
 
 .subscribe-input:hover, .subscribe-input:focus {
   border-color: #2196f3;
+}
+
+@media screen and (min-width: 768px) {
+  .subscribe-input {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe-input {
+    margin-right: 12px;
+    margin-bottom: 0;
+  }
 }
 
 .projects {

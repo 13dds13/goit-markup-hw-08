@@ -1,13 +1,18 @@
 .subscribe-form {
-  width: 100%;
-  height: auto;
-  margin-left: 93px;
-  padding-top: 12px;
+  text-align: center;
 }
 
-.input-btn-container {
-  display: flex;
-  width: 570px;
+@media screen and (min-width: 1200px) {
+  .input-btn-container {
+    display: flex;
+    width: 570px;
+  }
+
+  .subscribe-form {
+    margin-left: 93px;
+    padding-top: 12px;
+    text-align-last: left;
+  }
 }
 
 .subscribe-label {
@@ -22,10 +27,10 @@
 }
 
 .subscribe-input {
-  margin-right: 12px;
-  padding-left: 16px;
   height: 50px;
-  width: 358px;
+  padding-left: 16px;
+  margin-bottom: 20px;
+  width: 100%;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   background-color: transparent;
@@ -42,5 +47,18 @@
   &:hover,
   &:focus {
     border-color: $accent-color;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .subscribe-input {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe-input {
+    margin-right: 12px;
+    margin-bottom: 0;
   }
 }
