@@ -20,20 +20,57 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
+    <!-- mobile-menu -->
+    <button type="button" class="btn btn-mob-menu">
+      <svg class="btn-mob-menu" width="24" height="16">
+        <use data-modal-open href=""></use>
+        <use data-modal-close href=""></use>
+      </svg>
+    </button>
+
+    <div class="mob-menu-container is-hidden" data-modal>
+      <nav class="nav-mob">
+        <ul class="nav-list-mob">
+          <li class="nav-list-mob__item"><a class="nav-list-mob__link" href="">Студия</a></li>
+          <li class="nav-list-mob__item"><a class="nav-list-mob__link" href="">Портфолио</a></li>
+          <li class="nav-list-mob__item"><a class="nav-list-mob__link" href="">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <ul class="contacts-mob">
+        <li class="contacts-mob__item">
+          <a class="contacts-mob__link" href="">+38 096 111 11 11</a>
+        </li>
+        <li class="contacts-mob__item">
+          <a class="contacts-mob__link" href="">info@devstudio.com</a>
+        </li>
+      </ul>
+
+      <ul class="socials-mob">
+        <li class="socials-mob__item">
+          <a class="socials-mob__link" href="">Instagram</a
+          ><span class="socials-mob__border">|</span>
+        </li>
+        <li class="socials-mob__item">
+          <a class="socials-mob__link" href="">Twitter</a><span class="socials-mob__border">|</span>
+        </li>
+        <li class="socials-mob__item">
+          <a class="socials-mob__link" href="">Facebook</a
+          ><span class="socials-mob__border">|</span>
+        </li>
+        <li class="socials-mob__item"><a class="socials-mob__link" href="">LinkedIn</a></li>
+      </ul>
+    </div>
+
     <!--Header-->
     <header class="page-header">
+      <!-- tablet-and-desktop-menu-->
       <div class="container header-container">
         <nav class="nav-menu">
           <a href="./index.html" class="logo"
             ><span class="logo__web">Web</span
             ><span class="logo__studio logo__studio_dark">Studio</span></a
           >
-          <button type="button" class="btn btn-mob-menu">
-            <svg class="btn-mob-menu" width="24" height="16">
-              <use href=""></use>
-              <use href=""></use>
-            </svg>
-          </button>
           <ul class="nav-list">
             <li class="nav-list__item">
               <a class="nav-list__link nav-list__link_current" href="./index.html">Студия</a>

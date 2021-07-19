@@ -1,0 +1,18 @@
+.mob-menu-container {
+  width: 100vw;
+  height: 100vh;
+  background-color: $color-on-dark-accent-bg;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 768px) {
+  .mob-menu-container {
+    display: none;
+  }
+}
+
+.btn-mob-menu {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
