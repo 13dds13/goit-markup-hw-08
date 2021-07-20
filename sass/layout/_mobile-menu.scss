@@ -66,6 +66,10 @@
 
   color: $title-color;
 
+  @media screen and (max-width: 319px) {
+    font-size: 60%;
+  }
+
   &:hover {
     color: $accent-color;
   }
@@ -96,6 +100,10 @@
   letter-spacing: 0.02em;
 
   color: $accent-color;
+
+  @media screen and (max-width: 319px) {
+    font-size: 60%;
+  }
 }
 
 .contacts-mob__link_mail {

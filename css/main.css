@@ -32,11 +32,17 @@ a {
 }
 
 body {
-  max-width: 100vw;
+  width: 259px;
   margin-left: auto;
   margin-right: auto;
   font-family: 'Roboto', sans-serif;
   color: #757575;
+}
+
+@media screen and (min-width: 260px) {
+  body {
+    width: 100vw;
+  }
 }
 
 .images {
@@ -114,6 +120,12 @@ body {
   color: #212121;
 }
 
+@media screen and (max-width: 319px) {
+  .nav-list-mob__link {
+    font-size: 60%;
+  }
+}
+
 .nav-list-mob__link:hover {
   color: #2196f3;
 }
@@ -142,6 +154,12 @@ body {
   line-height: 1.18;
   letter-spacing: 0.02em;
   color: #2196f3;
+}
+
+@media screen and (max-width: 319px) {
+  .contacts-mob__link_tel {
+    font-size: 60%;
+  }
 }
 
 .contacts-mob__link_mail {
@@ -199,23 +217,33 @@ body {
 }
 
 .container {
-  max-width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  overflow-x: hidden;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 479px) {
   .container {
-    max-width: 480px;
+    width: 100%;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 480px) {
   .container {
-    max-width: 768px;
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
   }
 }
 
