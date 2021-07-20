@@ -2,11 +2,15 @@
   width: 100%;
   text-align: center;
 
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 767px) {
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
     padding: 118px 60px;
 
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../images/bg.jpg);
+      url('../../images/bg-hero-mob/Header\ img.png');
     background-repeat: no-repeat;
     background-size: cover;
   }

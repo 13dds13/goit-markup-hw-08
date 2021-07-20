@@ -99,6 +99,10 @@ body {
   color: #212121;
 }
 
+.nav-list-mob__link:hover {
+  color: #2196f3;
+}
+
 .nav-list-mob__link_current {
   color: #2196f3;
 }
@@ -368,10 +372,14 @@ body {
   text-align: center;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 767px) {
   .section-hero {
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
     padding: 118px 60px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/bg-hero-mob/Header img.png");
     background-repeat: no-repeat;
     background-size: cover;
   }
