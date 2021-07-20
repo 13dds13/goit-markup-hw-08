@@ -6,11 +6,19 @@
   width: 100vw;
   height: 100vh;
   background-color: $color-on-dark-accent-bg;
+
+  transition-property: opacity;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .is-open {
   opacity: 1;
   pointer-events: visible;
+
+  transition-property: opacity;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   .btn-mob-menu__icon-deactive {
     display: none;
@@ -24,6 +32,9 @@
 .btn-mob-menu__icon {
   position: absolute;
   z-index: 5;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-mob-menu__icon-active {
@@ -48,6 +59,10 @@
   font-size: 40px;
   line-height: 1.17;
   letter-spacing: 0.02em;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   color: $title-color;
 

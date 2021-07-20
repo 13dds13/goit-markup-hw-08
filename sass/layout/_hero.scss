@@ -59,12 +59,6 @@
         url('.././images/desktop/hero2x-min.jpg');
       background-repeat: no-repeat;
       background-size: cover;
-
-      .main-title {
-        max-width: 696px;
-        font-size: 44px;
-        line-height: 1.36;
-      }
     }
   }
 }
@@ -83,4 +77,10 @@
   word-wrap: break-word;
 
   color: $color-on-dark-accent-bg;
+
+  @media screen and (min-width: 1200px) {
+    max-width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }

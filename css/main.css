@@ -32,7 +32,7 @@ a {
 }
 
 body {
-  width: 100vw;
+  max-width: 100vw;
   margin-left: auto;
   margin-right: auto;
   font-family: 'Roboto', sans-serif;
@@ -57,11 +57,17 @@ body {
   width: 100vw;
   height: 100vh;
   background-color: #ffffff;
+  transition-property: opacity;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .is-open {
   opacity: 1;
   pointer-events: visible;
+  transition-property: opacity;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .is-open .btn-mob-menu__icon-deactive {
@@ -75,6 +81,9 @@ body {
 .btn-mob-menu__icon {
   position: absolute;
   z-index: 5;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-mob-menu__icon-active {
@@ -99,6 +108,9 @@ body {
   font-size: 40px;
   line-height: 1.17;
   letter-spacing: 0.02em;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   color: #212121;
 }
 
@@ -442,11 +454,6 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
   }
-  .section-hero .main-title {
-    max-width: 696px;
-    font-size: 44px;
-    line-height: 1.36;
-  }
 }
 
 .main-title {
@@ -461,6 +468,14 @@ body {
   text-transform: uppercase;
   word-wrap: break-word;
   color: #ffffff;
+}
+
+@media screen and (min-width: 1200px) {
+  .main-title {
+    max-width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .btn {
