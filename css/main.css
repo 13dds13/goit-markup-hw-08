@@ -57,7 +57,7 @@ body {
 
 .mob-menu-container {
   position: absolute;
-  z-index: 4;
+  z-index: 0;
   opacity: 0;
   pointer-events: none;
   width: 100vw;
@@ -120,9 +120,9 @@ body {
   color: #212121;
 }
 
-@media screen and (max-width: 319px) {
+@media screen and (max-width: 400px) {
   .nav-list-mob__link {
-    font-size: 60%;
+    font-size: 70%;
   }
 }
 
@@ -156,9 +156,9 @@ body {
   color: #2196f3;
 }
 
-@media screen and (max-width: 319px) {
+@media screen and (max-width: 400px) {
   .contacts-mob__link_tel {
-    font-size: 60%;
+    font-size: 70%;
   }
 }
 
@@ -168,6 +168,12 @@ body {
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: #757575;
+}
+
+@media screen and (max-width: 400px) {
+  .contacts-mob__link_mail {
+    font-size: 70%;
+  }
 }
 
 .socials-mob {
@@ -183,6 +189,15 @@ body {
   border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
+@media screen and (max-width: 400px) {
+  .socials-mob {
+    display: block;
+  }
+  .socials-mob__item:nth-child(1) {
+    padding-left: 10px;
+  }
+}
+
 .socials-mob__link {
   font-weight: 500;
   font-size: 18px;
@@ -190,6 +205,12 @@ body {
   letter-spacing: 0.02em;
   color: #2196f3;
   padding-right: 10px;
+}
+
+@media screen and (max-width: 400px) {
+  .socials-mob__link {
+    font-size: 70%;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -531,7 +552,7 @@ body {
   position: absolute;
   top: 10px;
   right: 15px;
-  z-index: 5;
+  z-index: 1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -641,6 +662,7 @@ body {
   position: absolute;
   left: 50%;
   top: 50%;
+  z-index: 10;
   padding: 40px;
   transform: translate(-50%, -50%);
   background-color: #ffffff;
