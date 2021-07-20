@@ -61,14 +61,25 @@ body {
   pointer-events: visible;
 }
 
+.is-open .btn-mob-menu__icon-deactive {
+  display: none;
+}
+
 .is-open .btn-mob-menu__icon-active {
   display: block;
 }
 
-.btn-mob-menu__icon-active {
-  display: none;
+.btn-mob-menu__icon {
   position: absolute;
   z-index: 5;
+}
+
+.btn-mob-menu__icon-active {
+  display: none;
+}
+
+.btn-mob-menu__icon-deactive {
+  display: block;
 }
 
 .mob-menu-container {
@@ -422,6 +433,7 @@ body {
 }
 
 .btn-mob-menu {
+  padding: 0;
   position: absolute;
   top: 10px;
   right: 15px;
@@ -431,6 +443,12 @@ body {
   align-items: center;
   width: 40px;
   height: 40px;
+  background-color: transparent;
+  border: none;
+}
+
+.btn-mob-menu:hover .btn-mob-menu__icon {
+  fill: #2196f3;
 }
 
 @media screen and (min-width: 768px) {

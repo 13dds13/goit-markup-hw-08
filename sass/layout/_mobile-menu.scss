@@ -13,15 +13,26 @@
   opacity: 1;
   pointer-events: visible;
 
+  .btn-mob-menu__icon-deactive {
+    display: none;
+  }
+
   .btn-mob-menu__icon-active {
     display: block;
   }
 }
 
-.btn-mob-menu__icon-active {
-  display: none;
+.btn-mob-menu__icon {
   position: absolute;
   z-index: 5;
+}
+
+.btn-mob-menu__icon-active {
+  display: none;
+}
+
+.btn-mob-menu__icon-deactive {
+  display: block;
 }
 
 .mob-menu-container {
