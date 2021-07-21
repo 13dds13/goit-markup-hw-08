@@ -60,7 +60,7 @@ body {
 
 .mob-menu-container {
   position: absolute;
-  z-index: 0;
+  z-index: 1;
   opacity: 0;
   pointer-events: none;
   width: 100vw;
