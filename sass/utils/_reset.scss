@@ -13,9 +13,12 @@ a {
   text-decoration: none;
 }
 
-button,
 input,
 textarea,
 a {
   outline: none;
+}
+
+button {
+  padding: 0;
 }
